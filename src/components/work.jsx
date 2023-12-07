@@ -2,9 +2,9 @@ import React from "react";
 import '../styles/work.css'
 import { CgCloseR } from 'react-icons/cg';
 
-function Work({ text }){
+function Work({ text, completed}){
   return (
-    <section className='work__container'>
+    <section className={completed ? 'work__container completed': 'work__container'}>
       <div className='work__text'>
         {text}
       </div>

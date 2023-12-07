@@ -30,3 +30,9 @@
   height: 25px;
   margin: 5px;
 }
+
+/*work completed*/
+.work__container .completed {
+  background-color: #260b49;
+  text-decoration: line-through;
+}
