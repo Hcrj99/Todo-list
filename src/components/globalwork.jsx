@@ -21,7 +21,9 @@ function Globalwork(){
       <section className="works__list-container">
         {
           works.map((work) => 
-            <Work 
+            <Work
+            key={work.id} 
+            id={work.id}
             text={work.text}
             completed={work.completed}/>
           )
