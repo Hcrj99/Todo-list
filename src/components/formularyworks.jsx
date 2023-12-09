@@ -13,7 +13,7 @@ const Formularyworks = (props) => {
   const handlerSend = event => {
     event.preventDefault();
     const newWork = {
-      id: '',
+      id: ,
       text: input,
       completed: false
     }
