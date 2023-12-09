@@ -7,11 +7,17 @@ function Globalwork(){
 
   const[works, setWorks] = useState([]);
   
-  const addwWork = work => {}
+  const addwWork = work => {
+    if(work.text.trim()) {
+      work.text = work.text.trim();
+      const currtentWork = [work, ...works];
+      setWorks(currtentWork);
+    }
+  }
 
   return (
     <>
-      <Formularyworks/>
+      <Formularyworks onSubmit={addwWork}/>
       <section className="works__list-container">
         {
           works.map((work) => 

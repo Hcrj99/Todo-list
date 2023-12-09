@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../styles/formularyworks.css'
+import { v4 as uuidv4} from 'uuid'
 
 
 const Formularyworks = (props) => {
@@ -12,11 +13,14 @@ const Formularyworks = (props) => {
 
   const handlerSend = event => {
     event.preventDefault();
+    
     const newWork = {
-      id: ,
+      id: uuidv4(),
       text: input,
       completed: false
     }
+
+    props.onSubmit(newWork);
   }
 
   return (
