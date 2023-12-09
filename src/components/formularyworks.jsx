@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import '../styles/formularyworks.css'
 
 
-const Formularyworks = () => {
+const Formularyworks = (props) => {
 
   const [input, setInput] = useState('');
 
@@ -11,14 +11,17 @@ const Formularyworks = () => {
   }
 
   const handlerSend = event => {
+    event.preventDefault();
     const newWork = {
       id: '',
-      text: '',
+      text: input,
+      completed: false
     }
   }
 
   return (
-    <form className="formulary__container">
+    <form className="formulary__container"
+    onSubmit={handlerSend}>
       <input
         className="formulary__input"
         type="text"
