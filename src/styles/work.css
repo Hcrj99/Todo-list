@@ -23,6 +23,19 @@
   overflow-wrap: anywhere;
 }
 
+
+.work__container:nth-child(3n + 1) {
+  background-color:  #260b49;
+}
+
+.work__container:nth-child(3n + 2) {
+  background-color:  #3d1275;
+}
+
+.work__container:nth-child(3n + 3) {
+  background-color:  #5419a1;
+}
+
 /*icon*/
 
 .work__icon {
@@ -32,19 +45,7 @@
 }
 
 /*work completed*/
-.work__container .completed {
-  background-color: #260b49;
+.work__container.completed {
+  background-color: #5d00d6;
   text-decoration: line-through;
-}
-
-.work__container:nth-child(3n + 1){
-  background-color:  #260b49;
-}
-
-.work__container:nth-child(3n + 2){
-  background-color:  #3d1275;
-}
-
-.work__container:nth-child(3n + 3){
-  background-color:  #5419a1;
 }

@@ -20,6 +20,16 @@ function Globalwork(){
     setWorks(currentWorks);
   }
 
+  const completedWork = id => {
+    const currentWorks = works.map(work => {
+      if (work.id === id){
+        work.completed = !work.completed;
+      }
+      return work;
+    });
+    setWorks(currentWorks);
+  }
+
   return (
     <>
       <Formularyworks onSubmit={addwWork}/>
@@ -30,6 +40,7 @@ function Globalwork(){
             key={work.id} 
             id={work.id}
             text={work.text}
+            completedwork={completedWork}
             completed={work.completed}
             deletework={deleteWork}/>
           )
