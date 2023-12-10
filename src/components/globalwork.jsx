@@ -15,6 +15,11 @@ function Globalwork(){
     }
   }
 
+  const deleteWork = id => {
+    const currentWorks = works.filter(work => work.id !== id);
+    setWorks(currentWorks);
+  }
+
   return (
     <>
       <Formularyworks onSubmit={addwWork}/>
@@ -25,7 +30,8 @@ function Globalwork(){
             key={work.id} 
             id={work.id}
             text={work.text}
-            completed={work.completed}/>
+            completed={work.completed}
+            deletework={deleteWork}/>
           )
         }
       </section>
