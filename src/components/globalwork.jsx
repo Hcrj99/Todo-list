@@ -13,12 +13,12 @@ function Globalwork(){
       const currtentWork = [work, ...works];
       setWorks(currtentWork);
     }
-  }
+  };
 
   const deleteWork = id => {
     const currentWorks = works.filter(work => work.id !== id);
     setWorks(currentWorks);
-  }
+  };
 
   const completedWork = id => {
     const currentWorks = works.map(work => {
@@ -28,7 +28,7 @@ function Globalwork(){
       return work;
     });
     setWorks(currentWorks);
-  }
+  };
 
   return (
     <>

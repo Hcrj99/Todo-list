@@ -9,7 +9,7 @@ const Formularyworks = (props) => {
 
   const handlerChange = event => {
     setInput(event.target.value);
-  }
+  };
 
   const handlerSend = event => {
     event.preventDefault();
@@ -18,10 +18,10 @@ const Formularyworks = (props) => {
       id: uuidv4(),
       text: input,
       completed: false
-    }
+    };
 
     props.onSubmit(newWork);
-  }
+  };
 
   return (
     <form className="formulary__container"
