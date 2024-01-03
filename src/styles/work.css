@@ -49,3 +49,9 @@
   background-color: #5d00d6;
   text-decoration: line-through;
 }
+
+@media (width<426px) {
+	.work__container {
+		width: 250px;
+	}
+}

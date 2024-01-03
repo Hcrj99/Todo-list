@@ -18,7 +18,7 @@
 .formulary__button {
 	padding: 16px;
 	font-size: 1.2rem;
-	font-family: Roboto, sans-serif;
+	font-family: 'Bebas Neue', sans-serif;
 	border: none;
 	border-radius: 0 4px 4px 0;
 	cursor: pointer;
@@ -26,4 +26,15 @@
 	background-color: #068b39;
 	color: white;
 	text-transform: capitalize;
+}
+
+@media (width<426px) {
+	.formulary__input {
+		width: 200px;
+	}
+
+	.formulary__button {
+		padding: 18px 8px 18px 8px; 
+		font-size: 1rem;
+	}
 }
